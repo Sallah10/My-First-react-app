@@ -1,0 +1,149 @@
+/* ## LayoutThe designs were created to the following widths:
+- Mobile: 375px
+- Desktop: 1440px
+### Body Copy
+- Font size (paragraph): 16px
+### Font
+- Family: [Roboto](https://fonts.google.com/specimen/Roboto)
+- Weights: 400, 700 */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+        url(/src/assets/fonts/Roboto-Bold.ttf),
+        url(/src/assets/fonts/Roboto-Regular.ttf)
+   
+  }
+
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--Dark-Slate-Grey);
+    font-family: 'Roboto';
+}
+:root{
+    --Tomato: hsl(4, 100%, 67%);
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+}
+
+.wholeContent{
+    margin: 20px auto;
+    display: flex;
+    gap: 40px;
+    text-align: center;    
+    border-radius: 30px;
+    background-color: var(--White);
+}
+main{
+    margin-top: -7px;
+    padding: 0 40px ;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: center;
+    gap: 6px;
+    
+}
+@media screen and (max-width : 935px) {
+    .wholeContent{
+        /* width: 100%; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        gap: 5px;
+    }
+}
+@media screen and (max-width : 783px) {
+    .ads{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .sub-ads{
+        display: flex;
+        /* flex-wrap: wrap; */
+        /* flex-direction: column; */
+        text-align: center;
+        justify-content: center;
+        gap: 3px;
+    }
+    .append-ads {
+        margin-left: -12em;
+    }
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 400;
+    color: var(--Dark-Slate-Grey);
+}
+h3{
+    color: var(--Dark-Slate-Grey);
+}
+.main-paragraph{
+    margin-right: -70px;
+}
+.sub-ads{
+    display: flex;
+    text-align: center;
+    gap: 10px;
+}
+input{
+    margin-top: -10px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+button{
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    border: 1px solid gray;
+    color: var(--White);
+    font-size: 15px;
+    background-color: var(--Dark-Slate-Grey);
+}
+
+.main-image{
+    padding: 20px;
+}
+.attribution{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    color: var(--Grey);
+    margin-top: -20px;
+}
+.attribution a{
+    color: var(--Tomato);
+}
+/* successful pop up */
+section{
+    margin: 30px auto;
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+    justify-content: center;
+    border-radius: 30px;
+    padding: 50px;
+}
+section >img{
+    width: 50px;
+}
+span{
+    color: var(--Dark-Slate-Grey);
+    
+}
